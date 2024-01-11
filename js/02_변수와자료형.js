@@ -81,8 +81,84 @@ console.log("number3 : ", number3);
 
 const PI = 3.141592;
 
-PI = 1.23; // Uncaught TypeError: Assignment to constant variable.
+// PI = 1.23; // Uncaught TypeError: Assignment to constant variable.
 // 상수에 값 대입 못하는데 새로운 값이 대입되었다
 
 // ------------------------------------------------------------
 
+/* JS 자료형 확인하기 */
+
+/* typeof 연산자 :  변수/값의 자료형을 출력하는 연산자 */
+/* undefined : 정의되지 않은 변수/ 값이 아직 대입되지 않았다 */
+let undef; // 변수 선언
+
+console.log("undef : ", undef, typeof undef);
+
+// string(문자열) : "" 또는 '' 내부에 작성된 값
+const name = "홍길동"; /* 쌍따옴표 */
+console.log("name : ", name, typeof name);
+
+const phone = '01012341234'; // 홑따옴표
+console.log("phone : ", phone, typeof phone);
+
+const gender = 'M'; // 한 글자만 작성해도 문자열(string)
+console.log("gender : ", gender, typeof gender);
+
+/* number(정수, 실수, 양수, 음수, 0 등 모든 숫자) */
+const age = 25;
+const height = 178.9;
+
+console.log("age : ", age, typeof age);
+console.log("height : ", height, typeof height);
+
+/* boolean (논리 값 true / false) */
+const isTrue = true;
+const isFalse = false;
+
+console.log("isTrue : ", isTrue, typeof isTrue);
+console.log("isFalse : ", isFalse, typeof isFalse);
+
+/* object (객체) */
+// (쉬운 버전 설명) : 값을 여러 개 저장할 수 있는 형태
+
+// 1) 배열(array) : 여러 값이 나열되어있는 것의 묶음
+const numbers = [10, 20, 30];
+
+console.log("numbers : ", numbers, typeof numbers);
+
+console.log("numbers 배열 값 중 0번째 : ", numbers[0], typeof numbers[0])
+console.log("numbers 배열 값 중 1번째 : ", numbers[1], typeof numbers[1])
+console.log("numbers 배열 값 중 2번째 : ", numbers[2], typeof numbers[2])
+
+// 2) JS 객체(Object)
+// 값을 K:V (Map) 형식으로 여러개 저장
+// -> { K:V , K:V , K:V }
+
+// K(key) : 값을 구분하는 이름(변수명 비슷)
+// V(value) : K에 대응되는 값(변수에 대입되는 값 비슷)
+
+const user = { id : "user01", pw : "pass01", userName : "김길동" };
+                
+console.log("user : ", user, typeof user);
+
+/* 객체에 존재하는 값 하나씩 얻어오기 */
+
+// 방법 1 : 변수명['key']
+console.log("user['id'] : ", user['id'], typeof user['id']);
+console.log("user['pw'] : ", user['pw'], typeof user['pw']);
+console.log("user['userName'] : ", user['userName'], typeof user['userName']);
+
+// 방법 2 : 변수명.key
+console.log(user.id, user.pw, user.userName);
+
+/* 함수(function) */
+
+// [작성법]
+// const 변수명 = function(){};
+// (변수명 == 함수명)
+
+const sumFn = function(a, b){ return a+b; }
+
+console.log( typeof sumFn ) // function
+
+console.log( sumFn(3,5) ); // 함수 호출(기능 수행)
