@@ -37,8 +37,7 @@ function deposit() {
     console.log("value1의 값", value1);
 
 
-    balance += value1
-    current.innerText = balance + Number(value1);
+    current.innerText = balance += Number(value1);
 
 }
 
