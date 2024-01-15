@@ -29,6 +29,7 @@ let balance = 10000;
 const password = 1234;
 const amount = document.getElementById("amount");
 const current = document.getElementById("current");
+const value1 = Number(amount.value);
 
 
 function deposit() {
@@ -50,15 +51,19 @@ function withdrawal() {
 
         // 입력한 비밀번호가 '1234'가 맞는지 확인
         if (password == '1234') {
-            alert("비밀번호 일치");
-
             const value1 = Number(amount.value)
-            
-            current.innerText = balance -= Number(amount.value)
-            
-
+            alert("비밀번호 일치");
+            if (value1 > balance) {
+                alert(" 출금 금액이 잔액보다 클 수 없습니다! "); 
+            } else {
+                current.innerText = balance -= Number(amount.value)
+            }
         } else {
             alert("비밀번호가 일치하지 않습니다.");
         }
     }
 }
+
+
+
+
