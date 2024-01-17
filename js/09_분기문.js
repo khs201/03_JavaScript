@@ -81,8 +81,7 @@ function startGame() {
         // 취소를 누른 경우 -> "게임 포기" 알림을 띄운 뒤 반복 종료 ***
         if (input == null) {
             alert("포기")
-            break;
-        }
+            break;}
         // 확인을 누른 경우 숫자로 변환 
         // NaN : Not a Number "숫자가 아니다"를 나타내는 값
         input = Number(input);
@@ -93,8 +92,7 @@ function startGame() {
         if (isNaN(input)) {
             alert("숫자만 입력해 주세요");
             continue;
-        } else if (input == null) break;
-        else if (input <= 0 || input >= 101) {
+        } else if (input <= 0 || input >= 101) {
             alert("1 ~ 100까지의 숫자를 입력해주세요")
         }
 
@@ -104,7 +102,7 @@ function startGame() {
 
         // 정답 시도 횟수를 1 증가 ***
         count++
-
+        
 
         // 입력한 값이 난수와 같다면 ****
         // "정답!! (입력한 값) / count : 정답횟수 알림창 출력 후" ****
@@ -112,7 +110,7 @@ function startGame() {
         if (input == randomNumber) {
             alert(`정답!! ${input} / 시도 횟수 : ${count}`);
             break;
-
+            
         }
 
 
@@ -121,14 +119,14 @@ function startGame() {
         // "[DOWN]" / count : 정답시도횟수 ***
         // 문자열을 str에 대입 후 다음 반복으로 이동
         if (input > randomNumber) alert(`[DOWN] / 시도 횟수 : ${count}`);
-
+        
 
         // 입력한 값이 난수보다 작은 경우
         // "[UP] / count : 정답시도횟수"
         // 문자열을 str에 대입 후 다음 반복으로 이동
-        else (input < randomNumber)
-        alert(`[UP] / 시도횟수 : ${count}`);
-    }
+        else (input < randomNumber) 
+            alert(`[UP] / 시도횟수 : ${count}`);
+        }
 
-}
+    }
 
