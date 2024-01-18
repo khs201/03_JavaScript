@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 500px;
+    margin: 50px auto;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    border-bottom: 0;
+}
+
+.colorbox{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 200px;
+    border: 3px solid black;
+  
+    /* css 변경 시간 */
+    transition-duration: 0.5s;
+  }
+
+  .row2 {
+   
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    margin-top: 5px;
+  }
+  #btn {
+    width: 80%;
+    border-color: blue;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+  }
