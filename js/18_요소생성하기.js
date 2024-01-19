@@ -6,24 +6,24 @@ const container = document.querySelector(".container");
 
 createBox.addEventListener("click", () => {
 
-    // 1. div 요소 생성
+  // 1. div 요소 생성
 
-    const box = document.createElement("div");
-    console.log(box); // 만들어졌지만 화면에는 안보임
+  const box = document.createElement("div");
+  console.log(box); // 만들어졌지만 화면에는 안보임
 
-    /* 2. 만들어진 div 요소에 "box" 클래스 추가 */
-    box.classList.add("box");
+  /* 2. 만들어진 div 요소에 "box" 클래스 추가 */
+  box.classList.add("box");
 
-    /* 3. container의 마지막 자식으로 div 요소 추가 */
-    container.append(box);
+  /* 3. container의 마지막 자식으로 div 요소 추가 */
+  container.append(box);
 
-    /* 4. input 요소 생성 */
-    const input = document.createElement("input");
-    input.type = "text"; // type="text" 지정
-    console.log(input);
+  /* 4. input 요소 생성 */
+  const input = document.createElement("input");
+  input.type = "text"; // type="text" 지정
+  console.log(input);
 
-    /* 5. 생성된 input을 box의 마지막 자식으로 추가 */
-    box.append(input);
+  /* 5. 생성된 input을 box의 마지막 자식으로 추가 */
+  box.append(input);
 
 });
 
@@ -59,11 +59,11 @@ const innerHTMLBox = document.querySelector("#innerHTMLBox");
 
 innerHTMLBox.addEventListener("click", () => {
 
-    /* container의 이전 내용에 
-         "<div class='box'></div>" 을 누적 + HTML 해석
-    */
+  /* container의 이전 내용에 
+       "<div class='box'></div>" 을 누적 + HTML 해석
+  */
 
-    container.innerHTML += "<div class='box'><input type='text'></div>";
+  container.innerHTML += "<div class='box'><input type='text'></div>";
 
 
 });
