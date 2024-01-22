@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 50px auto;
+    width: 400px;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+/* 시계 */
+#display {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-top: 2px solid aquamarine;
+    border-bottom: 2px solid aqua;
+}
+
+/* 버튼들 */
+button {
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 기록 부분 */
+#recordContainer {
+    min-height: 100px;
+    border-top: 2px solid skyblue;
+    margin-top: 20px;
+    list-style: none;
+    font-weight: bolder;
+}
