@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.rowBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.box {
+    text-align: center;
+    width: 20%;
+    padding: 20px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.box.box
