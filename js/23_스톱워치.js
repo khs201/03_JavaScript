@@ -1,5 +1,5 @@
 const display = document.querySelector("#display");
-const list = document.querySelectorAll("#display > span")
+const list = document.querySelectorAll("#display > span");
 const startBtn = document.querySelector("#startBtn");
 const recordBtn = document.querySelector("#recordBtn");
 const resetBtn = document.querySelector("#resetBtn");
@@ -18,6 +18,16 @@ let currInterval; // 인터벌 저장 변수
 /* START 버튼 클릭 시 10ms 마다 display (시간)을 증가 */
 startBtn.addEventListener("click", e => {
 
+    // 클릭한 버튼에 작성된 내용이 "PAUSE" 인 경우
+    if (e.target.textContent == "PAUSE") {
+        e.target.textContent = "START"; // 버튼 내용 START로 변경
+        window.clearInterval(currInterval); // currInterval 정지
+        return;
+    }
+
+
+
+    // 클릭한 버튼에 작성된 내용이 "START" 인 경우
     currInterval = window.setInterval(() => {
         count++; // count 1증가
         output(); // 화면에 시간 출력
@@ -25,7 +35,12 @@ startBtn.addEventListener("click", e => {
 
     }, 10); // 10ms
 
-    e.target.disabled = true;
+    e.target.textContent = "PAUSE";
+
+
+
+
+    // e.target.disabled = true; (임시)
 
 });
 
@@ -74,5 +89,48 @@ resetBtn.addEventListener("click", () => {
     output();
 
     // start 버튼 활성화
-    startBtn.disabled = false;
+    // startBtn.disabled = false;
+
+    // START 버튼의 내용을 "START"로 변경
+    startBtn.textContent = "START";
+
+
+    // #recordContainer의 내용을 모두 삭제(== 빈 문자열로 변경)
+    recordContainer.innerHTML = "";
+
 });
+
+recordBtn.addEventListener("click", () => {
+
+    const li = document.createElement("li"); // li 요소 생성
+
+    li.innerText = display.innerText; // #display에 출력된 시간을 얻어와 대입
+
+    // #recrodContainer의 첫 번째 자식으로 li 추가
+    recordContainer.prepend(li);
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 요소.textContent 와 요소.innerText */
+
+// textContent를 이용해 요소에 작성된 내용 얻어오기
+// -> HTML 파일에 작성된 내용 형태(단, 태그 빼고) 그대로 얻어옴
+//          (띄어쓰기, 엔터 모두 포함)
+
+// innerText를 이용해 요소에 작성된 내용 얻어오기
+// -> 브라우저 화면에 보이는 형태(단, 태그 빼고)를 얻어옴
