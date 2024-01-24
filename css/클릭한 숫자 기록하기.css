@@ -20,6 +20,7 @@
     box-sizing: border-box;
     /* width: 90px; */
     width: calc(280px / 3);
+    /* flex: 1; */
     height: 90px;
     border: 1px solid black;
 

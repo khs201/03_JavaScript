@@ -6,7 +6,15 @@
 
 body {
     text-align: center;
+
 }
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 
 #result {
     display: flex;
@@ -34,6 +42,13 @@ body {
 }
 
 .top {
-    align-content: start;
+    align-items: flex-start;
 }
 
+.middle {
+    align-items: center;
+}
+
+.bottom {
+    align-items: flex-end;
+}

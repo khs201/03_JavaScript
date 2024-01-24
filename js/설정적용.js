@@ -38,31 +38,31 @@ btn.addEventListener("click", () => {
 
 
 
-     // 굵기 적용
+    // 굵기 적용
     // style.fontWeight
     if (boldness == "bold") {
         result.classList.add("bold");
     } else {
         result.classList.add("normal");
-    } 
+    }
 
-     // 글자 정렬 적용
+    // 글자 정렬 적용
     if (rowA == "left") {
-       result.classList.add("left")
+        result.classList.add("left")
     } else if (rowA == "middle") {
         result.classList.add("center")
-    } else if(rowA ) {
+    } else if (rowA == "right") {
         result.classList.add("right")
-    } 
+    }
 
     // 수평 정렬 적용
     if (colA == "top") {
         result.classList.add("top")
-     } else if (colA == "middle") {
-         result.classList.add("center")
-     } else if {
-         result.classList.add("right")
-     } 
+    } else if (colA == "middle") {
+        result.classList.add("middle")
+    } else if (colA == "bottom") {
+        result.classList.add("bottom")
+    }
 
 
 
