@@ -1,8 +1,8 @@
 /* const container = document.getElementById("container");
-const plus = document.getElementById("plus");
+const add = document.getElementById("add");
 const calc = document.getElementById("calc");
 
-plus.addEventListener("click", () => {
+add.addEventListener("click", () => {
   const inputAdd = document.createElement("input");
   inputAdd.type = "number"
   console.log(inputAdd);
@@ -25,10 +25,10 @@ calc.addEventListener("click", () => {
 /////////////////////////// 기본 달성
 
 const container = document.getElementById("container");
-const plus = document.getElementById("plus");
+const add = document.getElementById("add");
 const calc = document.getElementById("calc");
 
-plus.addEventListener("click", () => {
+add.addEventListener("click", () => {
   const inputAdd = document.createElement("input");
   inputAdd.type = "number"
   console.log(inputAdd);

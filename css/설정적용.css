@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+#result {
+    display: flex;
+    border: 3px solid black;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.left {
+    justify-content: left;
+}
+
+.center {
+   justify-content: center;
+}
+
+.right {
+   justify-content: right;
+}
+
+.top {
+    align-content: start;
+}
+

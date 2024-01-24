@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-content: flex-start;
+    width: 280px;
+    height: 300px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+.number {
+    box-sizing: border-box;
+    /* width: 90px; */
+    width: calc(280px / 3);
+    height: 90px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.number:hover {
+    background-color: red;
+}
+
+.number:active {
+    background-color: black;
+}
