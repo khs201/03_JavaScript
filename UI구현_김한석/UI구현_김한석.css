@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.allContainer {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    justify-content: center;
+
+}
+
+.leftContainer {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.resultContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 25px;
+    flex-grow: 1;
+    width: 100%;
+    border-bottom: 3px solid grey;
+}
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    flex-grow: 3;
+    width: 80%;
+}
+
+.number {
+    flex-basis: calc(25.33% - 10px);
+    width: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.number:hover {
+    background-color: red;
+}
+
+.number:active {
+    background-color: black;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-grow: 2;
+}
+
+#addBtn {
+    width: 300px;
+    background-color: white;
+    border-color: green;
+    color: green;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#addBtn:active {
+    background-color: green;
+    color: black;
+}
+
+#resetBtn {
+    margin-top: 5px;
+    width: 300px;
+    background-color: white;
+    border-color: grey;
+    color: grey;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#resetBtn:active {
+    background-color: grey;
+    color: black;
+}
+
+
+
+.rightContainer {
+    flex: 2;
+    text-align: center;
+    border-left: 1px solid grey;
+
+}
+
+.pLn {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fav {
+    /* color: transparent; */
+    /* -webkit-text-stroke: 1px yellow; */
+    text-align: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+}
+
+
+
+.remove {
+    text-align: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+}
