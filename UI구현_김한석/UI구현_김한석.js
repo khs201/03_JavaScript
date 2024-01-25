@@ -59,10 +59,3 @@ addBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", e => {
     result.innerHTML = "&nbsp;";
 });
-
-// 삭제 버튼 구현
-
-// removeBtn.addEventListener('click', () => {
-//     pL.removeChild(addPl);
-// });
-

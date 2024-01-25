@@ -10,6 +10,7 @@
     width: 800px;
     height: 500px;
     justify-content: center;
+    border: 1px solid #c0c0c0;
 
 }
 
@@ -30,15 +31,10 @@
     font-weight: bolder;
     font-size: 25px;
     flex-grow: 1;
-    width: 100%;
-    border-bottom: 3px solid grey;
+    /* width: 100%; */
+    border-bottom: 1px solid #c0c0c0;
+    width: 50%;
 }
-
-
-
-
-
-
 
 .container {
     display: flex;
@@ -60,17 +56,20 @@
     align-items: center;
     cursor: pointer;
     user-select: none;
+    transition-duration: 0.1s;
 }
 
 
 
 
 .number:hover {
-    background-color: red;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+
 }
 
 .number:active {
-    background-color: black;
+    transform: scale(0.8);
 }
 
 .btnContainer {
@@ -83,6 +82,7 @@
 }
 
 #addBtn {
+    user-select: none;
     width: 300px;
     background-color: white;
     border-color: green;
@@ -92,12 +92,18 @@
     cursor: pointer;
 }
 
+#addBtn:hover {
+    background-color: green;
+    color: white;
+}
+
 #addBtn:active {
     background-color: green;
-    color: black;
+    color: white;
 }
 
 #resetBtn {
+    user-select: none;
     margin-top: 5px;
     width: 300px;
     background-color: white;
@@ -110,7 +116,12 @@
 
 #resetBtn:active {
     background-color: grey;
-    color: black;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: grey;
+    color: white;
 }
 
 
@@ -118,9 +129,16 @@
 .rightContainer {
     flex: 2;
     text-align: center;
-    border-left: 1px solid grey;
+    border-left: 1px solid #c0c0c0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
+
+
+
+
+
 
 .pLn {
     font-size: 20px;
@@ -128,8 +146,6 @@
 }
 
 .fav {
-    /* color: transparent; */
-    /* -webkit-text-stroke: 1px yellow; */
     text-align: center;
     border: none;
     background-color: white;
