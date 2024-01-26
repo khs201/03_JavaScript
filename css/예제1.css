@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 80vw;
+    /* border: 1px solid black; */
+    margin-left: 80px;
+
+}
+
+.head {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+#resName {
+    display: flex;
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    /* display: none; */
+}
+
+#resInput {
+    display: flex;
+    margin-left: 50px;
+    font-size: 50px;
+    height: 100px;
+    font-weight: bold;
+    display: none;
+
+}
+
+.main {
+
+    flex: 4;
+    display: flex;
+    border-bottom: 3px solid black;
+    height: 28vh;
+
+}
+
+
+.main>ul {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: 25px;
+    justify-content: flex-start;
+}
+
+ul>li {
+    margin-top: 30px;
+}
+
+ul>input {
+    font-size: 25px;
+}
+
+li>span {
+    padding-left: 300px;
+}
+
+
+
+.foot {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+button {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#finBtn {
+    display: none;
+}
+
+#addBtn {
+    display: none;
+}
+
+#delBtn {
+    display: none;
+}
+
+.head>h1 {
+    margin-left: 20px;
+    font-size: 35px;
+}
